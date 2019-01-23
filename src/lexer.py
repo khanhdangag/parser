@@ -16,6 +16,13 @@ rules = [
     (r"\-", "MINUS"),
     (r"\*", "MULTIPLY"),
     (r"\/", "DIVIDE"),
+    (r"\..", "DOTDOT"),
+    (r"\:=", "COLEQ"),
+    (r"\<=", "LE"),
+    (r"\>=", "GE"),
+    (r"<>", "NE"),
+    (r"")
+
 ]
 
 path = "input.txt"
