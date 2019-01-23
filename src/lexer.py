@@ -1,5 +1,5 @@
 path = "input.txt"
-
+input = ""
 with open('input.txt', 'r') as f:
-    print(f.read())
+    input = f.readline()
     

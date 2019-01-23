@@ -1,3 +1,6 @@
 # Ignore all pdf file
 *.pdf
 # Ignore input.txt
+input.txt
+#Ignore vscode config
+.vscode
