@@ -20,11 +20,13 @@ rules = [
     (r"\:=", "COLEQ"),
     (r"\<=", "LE"),
     (r"\>=", "GE"),
-    (r"<>", "NE"),
+    (r"\<>", "NE"),
     (r"")
 
 ]
-
+"""
+readfile
+"""
 path = "input.txt"
 input = ""
 with open("input.txt", "r") as f:
@@ -38,3 +40,8 @@ if x:
 else:
     print("No match")
 
+
+class Lexer():
+    def __init__(self, *args, **kwargs):
+        self.rule =  rules
+        
