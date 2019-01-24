@@ -1,8 +1,8 @@
 import re
 
-patern = re.compile(r"\and")
+patern = re.compile(r"\;")
 
-if patern.match("and"):
+if patern.match(";"):
     print("True")
 else:
     print("False")

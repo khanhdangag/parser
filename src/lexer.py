@@ -1,7 +1,7 @@
 import re
 import sys
 
-rules = [
+rules = (
     (r"\d+", "NUMBER"),
     (r"\;", "SEMI"),
     (r"\:", "COLON"),
@@ -26,7 +26,7 @@ rules = [
     (r"^'[a-zA-Z]{1}'$", "CHARCONST"),
     (r"^'[a-zA-Z]'$", "STRINGCONST"),
     (r"\and", "AND")
-]
+)
 """
 readfile
 """
@@ -44,7 +44,6 @@ else:
     print("No match")
 
 
-class Lexer():
+class Lexer:
     def __init__(self, *args, **kwargs):
-        self.rule =  rules
-        
+        self.rule = rules
