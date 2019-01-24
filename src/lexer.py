@@ -21,9 +21,11 @@ rules = [
     (r"\<=", "LE"),
     (r"\>=", "GE"),
     (r"\<>", "NE"),
-    (r"\w+", "IDENTIFIER"),
-    (r"\a",""),
-
+    (r"^[a-zA-Z]+[0-9]*", "IDENTIFIER"),
+    (r"\d+", "INTCONST"),
+    (r"^'[a-zA-Z]{1}'$", "CHARCONST"),
+    (r"^'[a-zA-Z]'$", "STRINGCONST"),
+    (r"\and", "AND")
 ]
 """
 readfile

@@ -1,5 +1,5 @@
 import unittest 
-import lexer as lex
+#import lexer as lex
 import sys
 import warnings
 import os
