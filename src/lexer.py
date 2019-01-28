@@ -25,7 +25,7 @@ rules = (
     (r"\d+", "INTCONST"),
     (r"^'[a-zA-Z]{1}'$", "CHARCONST"),
     (r"^'[a-zA-Z]'$", "STRINGCONST"),
-    (r"\and", "AND")
+    (r"and", "AND"),
 )
 """
 readfile

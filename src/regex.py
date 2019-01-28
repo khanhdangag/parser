@@ -1,8 +1,8 @@
 import re
 
-patern = re.compile(r"\<>")
+patern = re.compile(r"and")
 
-if patern.match("<>"):
+if patern.match("and"):
     print("True")
 else:
     print("False")
