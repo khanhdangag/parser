@@ -1,6 +1,6 @@
 import re
 
-patern = re.compile(r"and")
+patern = re.compile(r"^and$")
 
 if patern.match("and"):
     print("True")
